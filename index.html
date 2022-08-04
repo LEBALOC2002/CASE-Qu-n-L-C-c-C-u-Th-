@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Các Cầu Thủ MANCHESTER UNITED</title>
+    <link rel="stylesheet" href="case.css">
+</head>
+
+<body>
+    <div class="imgbar">
+        <img src="https://media.baotintuc.vn/Upload/EqV5H9rWgvy9oNikwkHLXA/files/Man-U-09072020-cover-2.jpeg" alt="">
+    </div>
+    <ul>
+        <li><a href="">Trang chủ</a></li>
+        <li><a href="">Cửa Hàng</a></li>
+        <li><a href="">Người Hâm Mộ</a></li>
+        <li><a href="">Hỗ trợ</a></li>
+        <li><a href="">Lịch Thi Đấu</a></li>
+        <li><a href="">Mua Vé</a></li>
+        <li><a href="">Bảng Tin Hôm Nay </a></li>
+    </ul>
+    <div class="product">
+        <table border="1" class="board1">
+            <thead>
+                <tr>
+                    <td colspan="2">
+                        <h2>TUYỂN DỤNG CẦU THỦ MỚI </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd">Name</td>
+                    <td class="inputtype">
+                        <input id='input1' class="name" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd"> Photo </td>
+                    <td class="inputtype">
+                        <input id='input2' class="photo" type="url"></input>
+                    </td>
+                </tr>
+                <tr >
+                    <td class="boardtd">Birthday</td>
+                    <td class="inputtype">
+                        <input id='input3' class="birthday" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd">Nation</td>
+                    <td class="inputtype">
+                        <input id='input4' class="nation" type="text"></input>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="boardtd">Actions</td>
+                    <td class="EVENT">
+                        <button class="d-none" id="eventsave" onclick="save(idRow)">SAVE</button>
+                        <button id="eventadd" onclick="add()">CREATE</button>
+                        <button id="eventcancel" onclick="cancel()">CANCEL</button>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        <table class="tbcase" border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Photo</th>
+                    <th>Birthday</th>
+                    <th>Nation</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="case.js"></script>
+</body>
+
+</html>
