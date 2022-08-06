@@ -105,10 +105,10 @@ li a:hover {
     text-align: center;
 }
 
-#input1,
-#input2,
-#input3,
-#input4 {
+#inputName,
+#inputBirthday,
+#inputNation,
+#inputPhoto {
     width: 98%;
     border-radius: 5px;
     background-color: rgba(234, 240, 236, 0.63);
