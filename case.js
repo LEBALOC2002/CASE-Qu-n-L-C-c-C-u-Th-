@@ -112,9 +112,25 @@ function save(){
     let id = document.getElementById("inputId").value;
     let position = getPosition(id);
     let name = document.getElementById('inputName').value;
+    if (name.trim() == "" || name == null) {
+        alert("Please re-enter your name");
+        return;
+    }
     let photo = document.getElementById('inputPhoto').value;
+    if (photo.trim() == "" || photo == null) {
+        alert("Please re-enter your photo");
+        return;
+    }
     let birthday = document.getElementById('inputBirthday').value;
+    if (birthday.trim() == "" || birthday == null) {
+        alert("Please re-enter your birthday");
+        return;
+    }
     let nation = document.getElementById('inputNation').value;
+    if (nation.trim() == "" || nation == null) {
+        alert("Please re-enter your nation");
+        return;
+    }
     players[position] = new Player(id, name, photo, birthday, nation);
     setdata(keydata, players);
     renderlistplayer();
